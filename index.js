@@ -18,7 +18,7 @@ function makeChart(labels, series, selector){
       }, {
         horizontalBars: true,
         axisY: {
-            offset: 100,
+            offset: 120,
           },
           classNames: {
             "chart": "customClass",
