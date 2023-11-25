@@ -1,3 +1,5 @@
+@namespace ct 'http://gionkunz.github.com/chartist-js/ct';
+
 *{
     font-family: system-ui
   }
@@ -24,4 +26,10 @@ pre{
 video{
     width:100%;
     max-width: 600px;
+}
+.ct-bar[ct|meta="Microsoft"]{
+    stroke: green;
+}
+.ct-bar[ct|meta="Sony"]{
+    stroke: blue;
 }

@@ -20,6 +20,9 @@ function makeChart(labels, series, selector){
         axisY: {
             offset: 100,
           },
+          classNames: {
+            "chart": "customClass",
+          } 
     });
 }
 
