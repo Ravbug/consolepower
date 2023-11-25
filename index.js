@@ -1,22 +1,24 @@
 const contentdiv = document.getElementById("content");
 
-function populateArrays(labels, series, classNames, console){
+function populateArrays(labels, series, console){
     labels.push(console.name)
-    series.push(console.power)
-    classNames.push(console.manufacturer)
+    series.push({
+        value: console.power,
+        className: console.manufacturer,
+        meta: console.manufacturer
+    })
 }
 
-function makeChart(labels, series, classNames, selector){
+function makeChart(labels, series, selector){
     new Chartist.Bar(selector, {
         labels: labels,
         series: [
           series
         ],
-        classNames: classNames,
       }, {
         horizontalBars: true,
         axisY: {
-            offset: 100
+            offset: 100,
           },
     });
 }
@@ -29,13 +31,12 @@ function makeGenChart(gen, data){
 
     let labels = []
     let series = []
-    let classNames = []
 
     for(const console of data){
-        populateArrays(labels, series, classNames, console)
+        populateArrays(labels, series, console)
     }
 
-    makeChart(labels, series, classNames, `#gen${gen}`)
+    makeChart(labels, series, `#gen${gen}`)
 }
 
 // all consoles together
@@ -47,11 +48,10 @@ function makeGenChart(gen, data){
     contentdiv.appendChild(chartelt);
     let labels = []
     let series = []
-    let classNames = []
     for(const console of data){
-        populateArrays(labels, series, classNames, console)
+        populateArrays(labels, series, console)
     }
-    makeChart(labels, series, classNames, `#${chartelt.id}`)
+    makeChart(labels, series, `#${chartelt.id}`)
 }
 
 // by generation
