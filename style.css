@@ -1,5 +1,11 @@
 @namespace ct 'http://gionkunz.github.com/chartist-js/ct';
 
+.ct-label{
+    fill: black;
+    color: black;
+}
+
+
 *{
     font-family: system-ui
   }
@@ -19,6 +25,7 @@
         color: white;
     }
 }
+
 pre{
     font-family: monospace;
     overflow: scroll;
@@ -32,4 +39,8 @@ video{
 }
 .ct-bar[ct|meta="Sony"]{
     stroke: blue;
+}
+
+table{
+    overflow-x: scroll
 }

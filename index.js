@@ -72,3 +72,12 @@ for(const console of data){
 for(const [gen, data] of Object.entries(dataByGen)){
     makeGenChart(gen, data);
 }
+
+const table = document.getElementById("references")
+const rows = []
+for(const console of data){
+    rows.push(
+        `<tr><td>${console.name}</td><td><a href="${console.ref}">${console.ref}</a></td></tr>`
+    )
+}
+table.innerHTML += rows.join('')
