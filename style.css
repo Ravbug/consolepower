@@ -2,12 +2,19 @@
     font-family: system-ui
   }
   @media (prefers-color-scheme: dark) {
-  body{
-  	background-color: #323232;
-    color: white;
-  }
+    body{
+        background-color: #323232;
+        color: white;
+    }
     a{
       color: rgb(83, 158, 250)
+    }
+    .ct-grid{
+        stroke: rgba(255,255,255,0.5)
+    }
+    .ct-label{
+        fill: white;
+        color: white;
     }
 }
 pre{
@@ -17,4 +24,8 @@ pre{
 video{
     width:100%;
     max-width: 600px;
+}
+
+.sony{
+    stroke: blue
 }

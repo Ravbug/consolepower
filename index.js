@@ -1,28 +1,60 @@
 const contentdiv = document.getElementById("content");
 
+function populateArrays(labels, series, classNames, console){
+    labels.push(console.name)
+    series.push(console.power)
+    classNames.push(console.manufacturer)
+}
+
+function makeChart(labels, series, classNames, selector){
+    new Chartist.Bar(selector, {
+        labels: labels,
+        series: [
+          series
+        ],
+        classNames: classNames,
+      }, {
+        horizontalBars: true,
+        axisY: {
+            offset: 100
+          },
+    });
+}
+
 function makeGenChart(gen, data){
     const chartelt = document.createElement('div');
+    chartelt.innerHTML = `<p>${gen}th Generation</p>`
     chartelt.id = `gen${gen}`
     contentdiv.appendChild(chartelt);
 
     let labels = []
     let series = []
+    let classNames = []
 
     for(const console of data){
-        labels.push(console.name)
-        series.push(console.power)
+        populateArrays(labels, series, classNames, console)
     }
 
-    new Chartist.Bar(`#gen${gen}`, {
-        labels: labels,
-        series: [
-          series
-        ]
-      }, {
-
-    });
+    makeChart(labels, series, classNames, `#gen${gen}`)
 }
 
+// all consoles together
+{
+    const chartelt = document.createElement('div');
+    chartelt.innerHTML = `<p>All Devices</p>`
+    chartelt.id = `allChart`
+    chartelt.style = "height: 400px"
+    contentdiv.appendChild(chartelt);
+    let labels = []
+    let series = []
+    let classNames = []
+    for(const console of data){
+        populateArrays(labels, series, classNames, console)
+    }
+    makeChart(labels, series, classNames, `#${chartelt.id}`)
+}
+
+// by generation
 const dataByGen = {
 
 };
