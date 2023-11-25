@@ -1,0 +1,47 @@
+[
+ {
+    "name" : "SNES",
+    "manufacturer" : "Nintendo",
+    "power" : 17,
+    "ref" : "https://snescentral.com/article.php?id=0088",
+    "gen" : 4
+ },
+  
+  {
+   "name" : "N64",
+    "manufacturer" : "Nintendo",
+    "power" : 19,
+    "ref" : "https://www.tpcdb.com/product.php?id=2602",
+    "gen" : 5
+  },
+  {
+   "name" : "PlayStation",
+    "manufacturer" : "Sony",
+    "power" : 10,
+    "ref" : "",
+    "gen" : 5
+  },
+
+  {
+   "name" : "GameCube",
+    "manufacturer" : "Nintendo",
+    "power" : 39,
+    "ref" : "https://www.nintendo.co.uk/Support/Nintendo-GameCube/Product-Information/Technical-data/Technical-data-619165.html",
+    "gen" : 6
+  },
+  {
+   "name" : "PlayStation 2",
+    "manufacturer" : "Sony",
+    "power" : 72,
+    "ref" : "https://www.psdevwiki.com/ps2/Power",
+    "gen" : 6
+  },
+  {
+   "name" : "Xbox",
+    "manufacturer" : "Microsoft",
+    "power" : 68,
+    "ref" : "https://xboxdevwiki.net/Power_Supply#Real_world_power_usage",
+    "gen" : 6
+  }
+
+]
