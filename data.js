@@ -1,4 +1,4 @@
-[
+const data = [
  {
     "name" : "SNES",
     "manufacturer" : "Nintendo",
