@@ -26,6 +26,7 @@ function makeChart(labels, series, selector){
         },
         plugins: [
           Chartist.plugins.ctPointLabels({
+            labelClass: 'ct-label-overlay',
             textAnchor: 'middle',
             labelInterpolationFnc: function(value) {return `${value}W`},
             labelOffset: {

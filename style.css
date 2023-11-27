@@ -5,8 +5,27 @@
     color: black;
 }
 
+.ct-bar[ct|meta="Sony"]{
+    stroke: #007bff;
+}
+
+
+.ct-bar[ct|meta="Microsoft"]{
+    stroke: lime;
+}
+
+.ct-bar[ct|meta="Sega"]{
+    stroke: skyblue;
+}
+
 .ct-bar[ct|meta="Apple"]{
-    stroke: black;
+    stroke: darkgray;
+}
+
+.ct-label-overlay{
+    fill: black;
+    color: black;
+    font-size: 0.75rem
 }
 
 *{
@@ -27,29 +46,27 @@
         fill: white;
         color: white;
     }
-    .ct-bar[ct|meta="Apple"]{
-        stroke: darkgray;
+    .ct-bar[ct|meta="Microsoft"]{
+        stroke: green;
     }
+    .ct-bar[ct|meta="Sony"]{
+        stroke: blue;
+    }
+    .ct-bar[ct|meta="Sega"]{
+        stroke: #1c61ac;
+    }
+    .ct-bar[ct|meta="Apple"]{
+        stroke: gray;
+    }
+    .ct-label-overlay{
+        fill: white;
+        color: white;
+        font-size: 0.75rem
+    }
+    
 }
+    
 
-pre{
-    font-family: monospace;
-    overflow: scroll;
-}
-video{
-    width:100%;
-    max-width: 600px;
-}
-.ct-bar[ct|meta="Microsoft"]{
-    stroke: green;
-}
-.ct-bar[ct|meta="Sony"]{
-    stroke: blue;
-}
-
-.ct-bar[ct|meta="Sega"]{
-    stroke: #1c61ac;
-}
 
 table{
     overflow-x: scroll
