@@ -5,6 +5,9 @@
     color: black;
 }
 
+.ct-bar[ct|meta="Apple"]{
+    stroke: black;
+}
 
 *{
     font-family: system-ui
@@ -24,6 +27,9 @@
         fill: white;
         color: white;
     }
+    .ct-bar[ct|meta="Apple"]{
+        stroke: darkgray;
+    }
 }
 
 pre{
@@ -40,6 +46,8 @@ video{
 .ct-bar[ct|meta="Sony"]{
     stroke: blue;
 }
+
+
 
 table{
     overflow-x: scroll

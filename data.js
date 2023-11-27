@@ -80,6 +80,13 @@ const data = [
     "ref" : "https://www.anandtech.com/show/6465/nintendo-wii-u-teardown",
     "gen" : 8
   },
+  {
+    "name" : "AppleTV HD (2015)",
+    "manufacturer" : "Apple",
+    "power" : 6,
+    "ref" : "https://arstechnica.com/gadgets/2015/11/new-apple-tv-wants-to-be-more-than-just-a-streaming-box-but-it-isnt-yet/",
+    "gen" : 8
+  },
  {
    "name" : "PlayStation 4 Pro",
     "manufacturer" : "Sony",
@@ -100,6 +107,13 @@ const data = [
     "manufacturer" : "Nintendo",
     "power" : 7,
     "ref" : "https://www.nintendo.co.uk/Corporate/Consumer-Information/Eco-design/Information-about-energy-efficiency-and-eco-design-of-Nintendo-Switch-family-consoles-2026830.html",
+    "gen" : 9
+  },
+  {
+    "name" : "AppleTV 4K (2022)",
+    "manufacturer" : "Apple",
+    "power" : 6,
+    "ref" : "https://www.howtogeek.com/825416/how-much-energy-are-your-streaming-media-players-using/",
     "gen" : 9
   },
  {
