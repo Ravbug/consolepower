@@ -17,6 +17,7 @@ function makeChart(labels, series, selector){
         ],
       }, {
         horizontalBars: true,
+        seriesBarDistance: 0,
         axisY: {
             offset: 120,
           },
