@@ -44,3 +44,10 @@ video{
 table{
     overflow-x: scroll
 }
+
+.axisLabel{
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 0.75rem
+}

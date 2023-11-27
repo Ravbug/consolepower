@@ -20,9 +20,19 @@ function makeChart(labels, series, selector){
         axisY: {
             offset: 120,
           },
-          classNames: {
-            "chart": "customClass",
-          } 
+        axisX: {
+          labelInterpolationFnc: value => Math.round(value),
+        },
+        plugins: [
+          Chartist.plugins.ctPointLabels({
+            textAnchor: 'middle',
+            labelInterpolationFnc: function(value) {return `${value}W`},
+            labelOffset: {
+              x: 0,
+              y: 4
+            },
+          })
+        ]
     });
 }
 
@@ -40,6 +50,11 @@ function makeGenChart(gen, data){
     }
 
     makeChart(labels, series, `#gen${gen}`)
+
+    const axisLabel = document.createElement('span')
+    axisLabel.innerHTML = "Power Consumption (Watts)"
+    axisLabel.classList = ["axisLabel"]
+    contentdiv.appendChild(axisLabel)
 }
 
 // all consoles together
