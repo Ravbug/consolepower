@@ -39,8 +39,8 @@ const data = [
   {
    "name" : "PlayStation",
     "manufacturer" : "Sony",
-    "power" : 10,
-    "ref" : "",
+    "power" : 17,
+    "ref" : "7.5-2.2A reference sticker",
     "gen" : 5
   },
   {

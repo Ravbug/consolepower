@@ -93,7 +93,8 @@ const table = document.getElementById("references")
 const rows = []
 for(const console of data){
     rows.push(
-        `<tr><td>${console.name}</td><td><a href="${console.ref}">${console.ref}</a></td></tr>`
+      console.ref.includes("http") ? `<tr><td>${console.name}</td><td><a href="${console.ref}">${console.ref}</a></td></tr>`
+      :  `<tr><td>${console.name}</td><td>${console.ref}</td></tr>`
     )
 }
 table.innerHTML += rows.join('')
