@@ -47,7 +47,9 @@ video{
     stroke: blue;
 }
 
-
+.ct-bar[ct|meta="Sega"]{
+    stroke: #1c61ac;
+}
 
 table{
     overflow-x: scroll

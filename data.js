@@ -1,10 +1,32 @@
 const data = [
+  {
+    "name" : "Master System",
+    "manufacturer" : "Sega",
+    "power" : 9,
+    "ref" : "9V 1A 120V reference sticker",
+    "gen" : 3
+ },
  {
+  "name" : "NES",
+  "manufacturer" : "Nintendo",
+  "power" : 16,
+  "ref" : "9V 1.8A 120V reference sticker",
+  "gen" : 3
+},
+ 
+  {
     "name" : "SNES",
     "manufacturer" : "Nintendo",
     "power" : 17,
     "ref" : "https://snescentral.com/article.php?id=0088",
     "gen" : 4
+ },
+ {
+  "name" : "Genesis",
+   "manufacturer" : "Sega",
+   "power" : 9,
+   "ref" : "https://www.gametechwiki.com/w/index.php/File:Sega_Genesis_model_2_MK-2103_10V_power_supply_01.jpg",
+   "gen" : 4
  },
   
   {
@@ -21,6 +43,13 @@ const data = [
     "ref" : "",
     "gen" : 5
   },
+  {
+    "name" : "Saturn",
+     "manufacturer" : "Sega",
+     "power" : 15,
+     "ref" : "https://en.wikipedia.org/wiki/Sega_Saturn",
+     "gen" : 5
+   },
 
   {
    "name" : "GameCube",
@@ -43,6 +72,13 @@ const data = [
     "ref" : "https://xboxdevwiki.net/Power_Supply#Real_world_power_usage",
     "gen" : 6
   },
+  {
+    "name" : "Dreamcast",
+     "manufacturer" : "Sega",
+     "power" : 65,
+     "ref" : "0.27A at 220-240V reference sticker",
+     "gen" : 6
+   },
 
   {
    "name" : "Wii",
