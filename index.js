@@ -39,8 +39,23 @@ function makeChart(labels, series, selector){
 }
 
 function makeGenChart(gen, data){
+  function numSuffix(n){
+    if (n == 1){
+      return "st";
+    }
+    else if (n == 2){
+      return "nd"
+    }
+    else if (n == 3){
+      return "rd"
+    }
+    else{
+      return "th"
+    }
+  }
+
     const chartelt = document.createElement('div');
-    chartelt.innerHTML = `<p>${gen}th Generation</p>`
+    chartelt.innerHTML = `<p>${gen}${numSuffix(gen)} Generation</p>`
     chartelt.id = `gen${gen}`
     contentdiv.appendChild(chartelt);
 
