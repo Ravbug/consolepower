@@ -137,6 +137,13 @@ const data = [
     "ref" : "https://www.playstation.com/en-gb/legal/ecodesign/",
     "gen" : 8
   },
+  {
+   "name" : "Xbox One",
+    "manufacturer" : "Microsoft",
+    "power" : 107,
+    "ref" : "https://www.anandtech.com/show/11992/the-xbox-one-x-review/6",
+    "gen" : 8
+  },
  {
    "name" : "Xbox One S",
     "manufacturer" : "Microsoft",
