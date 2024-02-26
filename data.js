@@ -123,10 +123,17 @@ const data = [
     "ref" : "https://arstechnica.com/gadgets/2015/11/new-apple-tv-wants-to-be-more-than-just-a-streaming-box-but-it-isnt-yet/",
     "gen" : 8
   },
+  {
+   "name" : "PlayStation 4",
+    "manufacturer" : "Sony",
+    "power" : 78,
+    "ref" : "https://www.playstation.com/en-gb/legal/ecodesign/",
+    "gen" : 8
+  },
  {
    "name" : "PlayStation 4 Pro",
     "manufacturer" : "Sony",
-    "power" : 140,
+    "power" : 126,
     "ref" : "https://www.playstation.com/en-gb/legal/ecodesign/",
     "gen" : 8
   },
@@ -137,7 +144,13 @@ const data = [
     "ref" : "https://support.xbox.com/en-US/help/hardware-network/power/learn-about-power-modes",
     "gen" : 8
   },
-
+{
+   "name" : "Xbox One X",
+    "manufacturer" : "Microsoft",
+    "power" : 172,
+    "ref" : "https://www.anandtech.com/show/11992/the-xbox-one-x-review/6",
+    "gen" : 8
+  },
  {
    "name" : "Switch",
     "manufacturer" : "Nintendo",
